@@ -1,0 +1,91 @@
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+
+body
+    background: linear-gradient(90deg, #b9deed, #efefef)
+    min-height: 100vh
+    font-size: 18px
+    color: #171a22
+    font-family: Arial, sans-serif
+
+input, button
+    border: 1px solid #3981aa
+    border-radius: 5px
+    outline: none
+
+.app
+    max-width: 600px
+    margin: 0 auto
+    padding: 50px
+
+.empty-data-message
+    color: #972d2d
+    font-weight: bold
+    text-align: center
+    
+.form
+    border: 1px solid #3981aa
+    border-radius: 5px
+    background-color: transparentize(#fff, .5)
+    padding: 40px
+    
+.input-wrapper
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    position: relative
+    padding-bottom: 30px
+    
+.input-label
+    margin-bottom: 5px
+    width: 100%
+    
+.input, .submit-btn
+    padding: 7px 14px
+    font-size: 14px
+    z-index: 1
+    
+.input
+    flex-grow: 1
+
+.btn
+    padding: 7px 14px
+    font-size: 14px
+    border: 1px solid #3981aa
+    z-index: 1
+    border-radius: 5px
+    height: min-content
+    cursor: pointer
+    &_add
+        position: absolute
+        top: 20px
+        right: 10px
+    &_delete
+        margin-left: 10px
+
+.inputs-group
+    position: relative
+    padding: 10px 
+    margin-bottom: 20px
+    border: 1px solid #3981aa
+    border-radius: 5px
+    &::before
+        content: ''
+        width: 110%
+        height: 100%
+        position: absolute
+        top: 0
+        left: -5%
+        z-index: 0
+    &__name
+        font-size: 18px
+        font-weight: bold
+        margin: 25px 0
+    &__array-name
+        font-size: 22px
+        font-weight: bold
+        margin: 20px 0
